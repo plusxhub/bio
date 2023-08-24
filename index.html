@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+      body {
+        background: linear-gradient(270deg, #ead661, #ff8208);
+        background-size: 400% 400%;
+
+        -webkit-animation: BackgroundGradient 6s ease infinite;
+        -moz-animation: BackgroundGradient 6s ease infinite;
+        animation: BackgroundGradient 6s ease infinite;
+      }
+
+      @-webkit-keyframes BackgroundGradient {
+        0% {
+          background-position: 0% 11%;
+        }
+
+        50% {
+          background-position: 100% 90%;
+        }
+
+        100% {
+          background-position: 0% 11%;
+        }
+      }
+
+      @-moz-keyframes BackgroundGradient {
+        0% {
+          background-position: 0% 11%;
+        }
+
+        50% {
+          background-position: 100% 90%;
+        }
+
+        100% {
+          background-position: 0% 11%;
+        }
+      }
+
+      @keyframes BackgroundGradient {
+        0% {
+          background-position: 0% 11%;
+        }
+
+        50% {
+          background-position: 100% 90%;
+        }
+
+        100% {
+          background-position: 0% 11%;
+        }
+      }
+
+      .hero {
+        font-family: 'Russo One', sans-serif;
+      }
+
+      .hero text {
+        text-transform: uppercase;
+        animation: stroke 4s infinite alternate cubic-bezier(0.25, 0.1, 0.25, 1);
+        stroke-width: 2;
+        stroke: #365fa0;
+        font-size: 7.5rem;
+      }
+
+      @keyframes stroke {
+        0% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: rgba(255, 130, 8, 1);
+          stroke-dashoffset: 25%;
+          stroke-dasharray: 0 50%;
+          stroke-width: 2;
+        }
+
+        70% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: rgba(255, 130, 8, 1);
+        }
+
+        80% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: rgba(255, 130, 8, 1);
+          stroke-width: 3;
+        }
+
+        100% {
+          fill: rgba(255, 162, 8, 1);
+          stroke: rgba(54, 95, 160, 0);
+          stroke-dashoffset: -25%;
+          stroke-dasharray: 50% 0;
+          stroke-width: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex justify-center items-center h-screen">
+      <div
+        class="flex flex-col bg-white rounded-xl items-center h-[90vh] w-screen mx-7 my-7 p-1 relative"
+      >
+        <svg class="hero justify-start py-6" viewBox="0 0 1000 120">
+          <text x="50%" y="50%" dy=".35em" text-anchor="middle">#PlusXHub</text>
+        </svg>
+
+        <div class="flex justify-center items-center mb-5">
+          <a
+            href="https://instagram.com/plusxhub"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://play.plusxhub.com/assets/insta_circle-8899a0dd.svg"
+              alt="Instagram"
+              class="pr-2 max-h-[5vh] lg:max-h-[5vh] h-full w-full"
+            />
+          </a>
+
+          <a
+            href="https://youtube.com/@plusxhub"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://play.plusxhub.com/assets/youtube_circle-5fc561a9.svg"
+              alt="Youtube"
+              class="pr-2 max-h-[5vh] lg:max-h-[5vh] h-full w-full"
+            />
+          </a>
+
+          <a
+            href="https://twitter.com/martingarrixhub"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://play.plusxhub.com/assets/twitter_circle-f1fafdf0.svg"
+              alt="Twitter"
+              class="pr-2 max-h-[5vh] lg:max-h-[5vh] h-full"
+            />
+          </a>
+        </div>
+
+        <a
+          href="https://plusxhub.medium.com/interview-martin-garrix-india-tour-2023-835b29baeafe"
+          class="flex flex-col items-center border border-gray-200 rounded-lg shadow md:max-w-xl hover:bg-gray-100"
+        >
+          <img
+            class="object-fit md:rounded-none md:rounded-l-lg"
+            src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*c0MVvqImroSj4aD-uL_S5g.png"
+            alt="Plusxhub with Martijn"
+          />
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              Interview: Martin Garrix — India Tour 2023
+            </h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              We are so happy to finally share this with you! This one’s real
+              special because Martijn was touring India after 5 years and the
+              hype around tour has been truly unimaginable.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
